@@ -5,5 +5,8 @@ class Welcome extends Controller {
 	public function index() {
 		$this->call->view('welcome_page');
 	}
+	public function about() {
+        echo "Welcome to LavaLust Framework";
+    }
 }
 ?>
