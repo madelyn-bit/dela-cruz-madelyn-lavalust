@@ -73,6 +73,11 @@ if (file_exists(ROOT_DIR . '.env')) {
 define('BASE_URL', config_item('base_url'));
 
 /**
+ * Date Default Timezone
+ */
+date_default_timezone_set(config_item('date_default_timezone'));
+
+/**
  * Composer (Autoload)
  */
 if ($composer_autoload = config_item('composer_autoload'))
@@ -235,7 +240,9 @@ if (php_sapi_name() === 'cli') {
     $method = 'GET';
     
 } else {
-    $url = $router->sanitize_url(str_replace($_SERVER['SCRIPT_NAME'], '', $_SERVER['PHP_SELF']));
+    $base  = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/');
+	$path  = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+	$url   = $router->sanitize_url(substr($path, strlen($base)) ?: '/');
     $method = isset($_SERVER['REQUEST_METHOD']) ? strtoupper($_SERVER['REQUEST_METHOD']) : 'GET';
 }
 
