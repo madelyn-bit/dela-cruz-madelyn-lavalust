@@ -62,7 +62,7 @@ $database['main'] = array(
     'hostname'	=> getenv('DB_HOST') ?: 'mysql-madie-averyavin-b1d7.g.aivencloud.com',
     'port'		=> getenv('DB_PORT') ?: '19045',
     'username'	=> getenv('DB_USER') ?: 'avnadmin',
-    'password'	=> getenv('DB_PASSWORD') ?: 'DB_PASSWORD= AVNS_4HzcQ6g7Ix978g2OmX_',
+    'password'	=> getenv('DB_PASSWORD') ?: 'AVNS_4HzcQ6g7Ix978g2OmX_',
     'database'	=> getenv('DB_NAME') ?: 'defaultdb',
     'charset'	=> '',
     'dbprefix'	=> '',
