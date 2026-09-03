@@ -1,0 +1,13 @@
+# Copy this file to .env and update the values below
+
+# Application Settings
+APP_NAME=Lavalust
+APP_KEY=dfe1d08794099b20b96ae3f8cc201390106bdbfb36718885041623b438160c67
+APP_ENV=development
+
+# Database Configuration
+DB_HOST= mysql-madie-averyavin-b1d7.g.aivencloud.com
+DB_PORT= 19045
+DB_USER= avnadmin
+DB_PASSWORD= AVNS_4HzcQ6g7Ix978g2OmX_
+DB_NAME= defaultdb
