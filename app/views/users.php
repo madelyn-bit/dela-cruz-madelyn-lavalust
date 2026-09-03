@@ -10,7 +10,7 @@
 
     <h1>Welcome to Users View</h1>
 
-    <tables>
+    <table border="1">
         <thead>
             <tr>
                 <th>ID</th>
@@ -36,4 +36,3 @@
 
 </body>
 </html>
-
